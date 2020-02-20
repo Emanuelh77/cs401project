@@ -6,10 +6,10 @@
   }
 */
 
-.topcorner{
+.splitright{
 position:absolute;
-top:1%;
-right:5%;
+top: 1%;
+right: 5%;
 }
 
 html, body {
@@ -31,6 +31,12 @@ h1 {
 div img {
     width: 100px;
     height: 100px;
+}
+
+.previews {
+    width: 200px;
+    height: 200px;
+    align: left;
 }
 
 .active {
