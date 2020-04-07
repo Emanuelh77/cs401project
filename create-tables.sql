@@ -1,0 +1,22 @@
+USE heroku_e7a01c19c54ad2a;
+
+CREATE TABLE Users (
+    Username VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL PRIMARY KEY,
+    Password LONGTEXT NOT NULL
+);
+
+CREATE TABLE Items (
+    ItemName VARCHAR(200) NOT NULL PRIMARY KEY,
+    OverallRating DECIMAL(2,2) NOT NULL,
+    ProcessingPower DECIMAL(2,2) NOT NULL,
+    Affordability DECIMAL(2,2) NOT NULL,
+    Price DECIMAL(4,2) NOT NULL,
+    BatteryLife DECIMAL(2,2),
+    Design DECIMAL(2,2) NOT NULL
+);
+
+CREATE TABLE Suggestions (
+    suggID int AUTO_INCREMENT PRIMARY KEY,
+    suggestion VARCHAR(256) NOT NULL
+);

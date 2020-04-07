@@ -7,16 +7,16 @@
 */
 
 .splitright{
-position:absolute;
-top: 1%;
-right: 5%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
 }
 
 html, body {
     font-family: Georgia;
     background-color: #22C7F0;
     margin: 0;
-    padding: 0;
+    padding: 1%;
   }
 
 header {
@@ -46,4 +46,25 @@ div img {
 nav {
     display: inline-block;
     /*color: black;*/
+}
+
+nav a:hover {
+    background-color: #0059b3;
+    color: white;    
+}
+
+.vertical {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0059b3;
+    color: white;
 }

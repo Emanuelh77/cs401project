@@ -1,3 +1,6 @@
+<?php
+        session_start();
+?>
 <html>
         <head>
                 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
@@ -5,18 +8,20 @@
         <header>
                 <div class="splitleft">
                         <title>TCET</title>
-                        <img src="TCET-logo.png" alt="TCET logo">
+                        <img src="main_photos/TCET-logo.png" alt="TCET logo">
         
                         <nav>
-                                <a href="index.html">Home</a> |
-                                <a class="active" href="reviews.html">Reviews</a> |
-                                <a href="suggestions.html">Suggestions</a> |
-                                <a href="premium.html">Premium</a>
+                                <a href="index.php">Home</a> |
+                                <a class="active" href="reviews.php">Reviews</a> |
+                                <a href="suggestions.php">Suggestions</a> |
+                                <a href="premium.php">Premium</a>
                         </nav>
                 </div>
                 <div class="splitright">
-                          <p>Log in</p>
-                          <p>Sign up</p>
+                        <ul class="vertical">
+                          <li><a href="login.php">Log in</a></li>
+                          <li><a href="signup.php">Sign up</a></li>
+                        </ul>
                 </div>
                 
         </header>
