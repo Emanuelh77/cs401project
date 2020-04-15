@@ -8,7 +8,7 @@
         <header>
                 <div class="splitleft">
                         <title>TCET</title>
-                        <img src="main_photos/TCET-logo.png" alt="TCET logo">
+                        <img class="logo" src="main_photos/TCET-logo.png" alt="TCET logo">
         
                         <nav>
                                 <a href="index.php">Home</a> |
@@ -19,8 +19,18 @@
                 </div>
                 <div class="splitright">
                         <ul class="vertical">
-                          <li><a href="login.php">Log in</a></li>
-                          <li><a href="signup.php">Sign up</a></li>
+                        <?php
+                                if(isset($_SESSION['username'])) {
+                                        echo '<li>You are logged in!</li>';
+                                        echo '<form action="include/logout.inc.php" method="post">';
+                                        echo '<button type="submit" name="logout-submit">Logout</button>';
+                                        echo '</form>';
+                                }
+                                else {
+                                        echo'<li><a href="include/login.php">Log in</a></li>';
+                                        echo'<li><a href="include/signup.php">Sign up</a></li>';
+                                }
+                        ?>
                         </ul>
                 </div>
                 
@@ -30,20 +40,17 @@
                 <div>
                         <h4>laptops</h4>
                         <ul>
-                                <li>Apple Macbook Pro 16inch</li>
-                                <li>Apple Macbook Pro 15inch</li>
-                                <li>Asus Zenbook</li>
-                              </ul>
+                                <li><a href="laptop_cat/macbook.php">Apple Macbook Pro 16inch</a></li>
+                        </ul>
                 </div>
                 <div>
                         <h4>phones</h4>
                         <ul>
-                                <li>Apple Iphone 11</li>
-                                <li>Apple Iphone 11 Pro</li>
-                                <li>Apple Iphone XS</li>
-                                <li>Apple Iphone XR</li>
-                              </ul>
+                                <li><a href="phone_cat/iphone.php">Iphone 11 Pro</a></li>
+                        </ul>
                 </div>
+
+        <p>More ratings coming soon!</p>
                 
         </body>
 </html>

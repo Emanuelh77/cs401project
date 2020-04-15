@@ -28,15 +28,31 @@ h1 {
     font-size: 250%;
 }
 
-div img {
+h3 {
+    padding-top: 30px;
+    clear: both;
+}
+
+.logo {
     width: 100px;
     height: 100px;
 }
 
-.previews {
+.container {
+    width: 100%;
+    clear: both;
+}
+
+.container img {
     width: 200px;
     height: 200px;
-    align: left;
+    margin-right: 15px;
+    float: left;
+}
+
+.container p{
+    margin-left: 15px;
+    display: block;
 }
 
 .active {
@@ -67,4 +83,20 @@ li a {
 li a:hover {
     background-color: #0059b3;
     color: white;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+button {
+    display: block;
 }

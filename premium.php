@@ -8,7 +8,7 @@
         <header>
                 <div class="splitleft">
                         <title>TCET</title>
-                        <img src="main_photos/TCET-logo.png" alt="TCET logo">
+                        <img class="logo" src="main_photos/TCET-logo.png" alt="TCET logo">
         
                         <nav>
                                 <a href="index.php">Home</a> |
@@ -19,8 +19,18 @@
                 </div>
                 <div class="splitright">
                         <ul class="vertical">
-                          <li><a href="login.php">Log in</a></li>
-                          <li><a href="signup.php">Sign up</a></li>
+                        <?php
+                                if(isset($_SESSION['username'])) {
+                                        echo '<li>You are logged in!</li>';
+                                        echo '<form action="include/logout.inc.php" method="post">';
+                                        echo '<button type="submit" name="logout-submit">Logout</button>';
+                                        echo '</form>';
+                                }
+                                else {
+                                        echo'<li><a href="include/login.php">Log in</a></li>';
+                                        echo'<li><a href="include/signup.php">Sign up</a></li>';
+                                }
+                        ?>
                         </ul>
                 </div>
                 

@@ -17,7 +17,7 @@ if (isset($_POST['signup-submit'])) {
         exit();
     }
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        header("Location: signup.php?error=invalidemail&uid=".$username);
+        header("Location: signup.php?error=invalideuid&uid=".$username);
         exit();
     }
     else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)){

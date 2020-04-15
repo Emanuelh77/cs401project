@@ -5,7 +5,7 @@
                 <h1>Login</h1>
                 <form action="login.inc.php" method="post">
                     <input type="text" name="username" placeholder="username...">
-                    <input type="passowrd" name="pwd" placeholder="password...">
+                    <input type="password" name="pwd" placeholder="password...">
                     <button type="submit" name="login-submit">Login</button>
                 </form>
             </section>
