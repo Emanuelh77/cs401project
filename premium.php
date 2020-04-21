@@ -3,6 +3,8 @@
 ?>
 <html>
         <head>
+                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@300&display=swap" 
+                rel="stylesheet">
                 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         </head>
         <header>

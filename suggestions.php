@@ -3,6 +3,8 @@
 ?>
 <html>
         <head>
+                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@300&display=swap" 
+                rel="stylesheet">
                 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
         </head>
         <header>
@@ -50,7 +52,8 @@
                                         
                                         if(isset($_POST['submit'])){
 
-                                                $sugg = $_POST['suggestion_text'];
+                                                $temp = $_POST['suggestion_text'];
+                                                $sugg = htmlspecialchars($temp, ENT_QUOTES, 'UTF-8');
 
                                                 $sql = "INSERT INTO Suggestions (suggestion) VALUES (?)";
                                                 $stmt = mysqli_stmt_init($conn);

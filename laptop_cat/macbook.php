@@ -1,6 +1,8 @@
 <html>
         <head>
                 <link rel="stylesheet" type="text/css" href="../style.css" media="screen"/>
+                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@300&display=swap" 
+                rel="stylesheet">
         </head>
         <header>
                 <div class="splitleft">

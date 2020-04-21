@@ -5,6 +5,19 @@
 <html>
         <head>
                 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@300&display=swap" 
+                rel="stylesheet">
+                <script src="https://code.jquery.com/jquery-3.5.0.min.js" 
+                        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+                        crossorigin="anonymous">
+                </script>
+                <script>
+                        $(function() {
+
+                        $("p").hide(100).slideDown(1000);
+                        $("h3").hide(100).slideDown(1000);
+                        });
+                </script>
         </head>
         <header>
                 <div class="splitleft">

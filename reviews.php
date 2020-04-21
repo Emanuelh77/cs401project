@@ -4,6 +4,18 @@
 <html>
         <head>
                 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+                <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@300&display=swap" 
+                rel="stylesheet">
+                <script src="https://code.jquery.com/jquery-3.5.0.min.js" 
+                        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+                        crossorigin="anonymous">
+                </script>
+                <script>
+                        $(function() {
+
+                        $(".items").hide(100).show(1000);
+                        });
+                </script>
         </head>
         <header>
                 <div class="splitleft">
@@ -40,13 +52,13 @@
                 <div>
                         <h4>laptops</h4>
                         <ul>
-                                <li><a href="laptop_cat/macbook.php">Apple Macbook Pro 16inch</a></li>
+                                <li class="items"><a href="laptop_cat/macbook.php">Apple Macbook Pro 16inch</a></li>
                         </ul>
                 </div>
                 <div>
                         <h4>phones</h4>
                         <ul>
-                                <li><a href="phone_cat/iphone.php">Iphone 11 Pro</a></li>
+                                <li class="items"><a href="phone_cat/iphone.php">Iphone 11 Pro</a></li>
                         </ul>
                 </div>
 

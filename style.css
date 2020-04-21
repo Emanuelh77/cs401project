@@ -6,6 +6,10 @@
   }
 */
 
+html {
+    font-family: 'Raleway', 'sans-serif';
+}
+
 .splitright{
     position: absolute;
     top: 5%;
@@ -13,14 +17,12 @@
 }
 
 html, body {
-    font-family: Georgia;
     background-color: #22C7F0;
     margin: 0;
     padding: 1%;
-  }
+}
 
 header {
-    font-family: Georgia;
     background-color: #29A1BF;
 }
 
@@ -100,3 +102,8 @@ td, th {
 button {
     display: block;
 }
+
+body ul {
+    list-style-type: none;
+}
+

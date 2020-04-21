@@ -26,7 +26,7 @@ if (isset($_POST['login-submit'])){
             if ($row = mysqli_fetch_assoc($result)){
                 $pwdCheck = password_verify($password, $row['Password']);
                 if ($pwdCheck == false){
-                    header("Location: login.php?error=wrongpwd");
+                    header("Location: login.php?error=wrong");
                     exit();
                 }
                 else if ($pwdCheck == true){
@@ -37,12 +37,12 @@ if (isset($_POST['login-submit'])){
 
                 }
                 else {
-                    header("Location: login.php?error=wrongpwd");
+                    header("Location: login.php?error=wrong");
                     exit();
                 }
             }
             else {
-                header("Location: login.php?error=nouser");
+                header("Location: login.php?error=nouser&uid=".$username);
                 exit();
             }
         }

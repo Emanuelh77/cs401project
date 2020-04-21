@@ -1,7 +1,22 @@
+<?php
+    session_start();
+    if(isset($_SESSION['username']) == true){
+        header("Location: ../index.php");
+        exit();
+    }
+?>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Raleway:wght@300&display=swap" 
+            rel="stylesheet">
     </head>
+    <header>
+            <div class="splitleft">
+                    <title>TCET</title>
+                    <img class="logo" src="../main_photos/TCET-logo.png" alt="TCET logo">
+            </div>              
+    </header>
     <main>
         <div class="signup">
             <section>
@@ -30,8 +45,13 @@
 
                 ?>
                 <form action="signup.inc.php" method="post">
-                    <input type="text" name="uid" placeholder="username...">
-                    <input type="text" name="email" placeholder="email...">
+                    <label for="uid">Enter your username:</label>
+                    <input type="text" name="uid" placeholder="username..."
+                    value="<?php echo $_GET['uid'];?>">
+                    <label for="email">Enter your email:</label>
+                    <input type="text" name="email" placeholder="email..."
+                    value="<?php echo $_GET['email'];?>">
+                    <label for="pwd">Enter your password:</label>
                     <input type="password" name="pwd" placeholder="password...">
                     <button type="submit" name="signup-submit">Signup></button>
                 </form>
