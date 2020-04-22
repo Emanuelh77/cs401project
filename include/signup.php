@@ -53,7 +53,7 @@
                     value="<?php echo $_GET['email'];?>">
                     <label for="pwd">Enter your password:</label>
                     <input type="password" name="pwd" placeholder="password...">
-                    <button type="submit" name="signup-submit">Signup></button>
+                    <button type="submit" name="signup-submit">Signup</button>
                 </form>
             </section>
         </div>
